@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "hono-rdf-101",
   "main": "src/index.ts",
-  "compatibility_date": "2025-05-05"
+  "compatibility_date": "2025-05-05",
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
