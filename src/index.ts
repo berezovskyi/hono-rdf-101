@@ -2,21 +2,25 @@ import { Hono } from 'hono'
 
 const app = new Hono()
 
-import NamedNodeBase from '@rdfjs/data-model/lib/NamedNode.js'
-import Literal from '@rdfjs/data-model/lib/Literal.js'
-import QuadBase from '@rdfjs/data-model/lib/Quad.js'
-import Dataset from '@rdfjs/dataset/DatasetCore.js'
-import toNT from '@rdfjs/to-ntriples'
+// import NamedNodeBase from '@rdfjs/data-model/lib/NamedNode.js'
+// import Literal from '@rdfjs/data-model/lib/Literal.js'
+// import QuadBase from '@rdfjs/data-model/lib/Quad.js'
+// import Dataset from '@rdfjs/dataset/DatasetCore.js'
+// import toNT from '@rdfjs/to-ntriples'
 import rdf from 'rdf-ext'
 
 /// =============================== rdf-ext =============================== ///
 // otherwise fails with 'Uncaught ReferenceError: window is not defined'
-try {
-  rdf.dataset().toCanonical()
-} catch(err: any|unknown) {
-  console.error(err)
-}
+export default {
+  async main() {
+  try {
+    rdf.dataset().toCanonical()
+  } catch(err: any|unknown) {
+    console.error(err)
+  }
 
+  }
+}
 // class NamedNode extends NamedNodeBase {
 //   toCanonical () {
 //     return toNT(this)

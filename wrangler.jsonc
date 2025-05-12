@@ -2,10 +2,21 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "hono-rdf-101",
   "main": "src/index.ts",
-  "compatibility_date": "2025-05-05",
-  // "compatibility_flags": [
-  //   "nodejs_compat"
-  // ],
+  "compatibility_date": "2025-04-28",
+  "compatibility_flags": [
+    // "nodejs_compat"
+    "nodejs_compat_v2"
+  ],
+  // "build": {
+  //   // "command": "npx esbuild@latest src/index.ts --bundle --outfile=dist/index.js --target=esnext --format=esm --platform=node --main-fields=module,main --log-limit=0"
+  //   "command": "npx esbuild@latest src/index.ts --bundle --outfile=dist/index.js --target=esnext --format=esm --platform=neutral --main-fields=module,main --log-limit=0"
+  // },
+  "alias": {
+    "node:fs": "./src/fs-polyfill.js",
+    // "fs": "./src/fs-polyfill.js",
+    // "node:stream": "./src/poly-stream.js",
+    // "node:util": "./src/poly-util.js",
+  }
   // "vars": {
   //   "MY_VAR": "my-variable"
   // },

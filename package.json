@@ -1,40 +1,18 @@
 {
   "name": "hono-rdf-101",
   "scripts": {
+    "dev#comment": "wrangler dev dist/index.js --no-bundle",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
     "rdf-ext": "^2.5.2",
-    "@rdfjs/data-model": "^2.1.0",
     "hono": "^4.7.8",
-    "@rdfjs/dataset": "^2.0.1",
-    "@rdfjs/environment": "^1.0.0",
-    "@rdfjs/formats": "^4.0.0",
-    "@rdfjs/io": "^1.0.0",
-    "@rdfjs/namespace": "^2.0.0",
-    "@rdfjs/normalize": "^2.0.0",
-    "@rdfjs/prefix-map": "^0.1.1",
-    "@rdfjs/score": "^0.1.1",
-    "@rdfjs/term-map": "^2.0.0",
-    "@rdfjs/term-set": "^2.0.1",
-    "@rdfjs/to-ntriples": "^3.0.1"
+    "web-streams-polyfill": "^4.1.0"
   },
   "devDependencies": {
-    "@types/clownface": "^2.0.10",
     "@types/rdf-ext": "^2.5.2",
-    "@rdfjs/types": "^2.0.0",
-    "@types/rdfjs__namespace": "^2.0.10",
-    "@types/rdfjs__data-model": "^2.0.0",
-    "@types/rdfjs__dataset": "^2.0.1",
-    "@types/rdfjs__environment": "^1.0.0",
-    "@types/rdfjs__formats": "^4.0.0",
-    "@types/rdfjs__prefix-map": "^0.1.1",
-    "@types/rdfjs__score": "^0.1.1",
-    "@types/rdfjs__term-map": "^2.0.0",
-    "@types/rdfjs__term-set": "^2.0.1",
-    "@types/rdfjs__to-ntriples": "^2.0.0",
     "wrangler": "^4.4.0"
   }
 }
