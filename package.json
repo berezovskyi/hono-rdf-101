@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "rdf-ext": "^2.5.2",
-    "hono": "^4.7.8",
+    "hono": "^4.11.4",
     "web-streams-polyfill": "^4.1.0"
   },
   "devDependencies": {
