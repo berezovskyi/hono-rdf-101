@@ -13,6 +13,6 @@
   },
   "devDependencies": {
     "@types/rdf-ext": "^2.5.2",
-    "wrangler": "^4.4.0"
+    "wrangler": "^4.59.1"
   }
 }
